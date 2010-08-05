@@ -2,7 +2,7 @@
 
 * http://gonzui.sourceforge.net/langscan/index.html.en
 * Gem version
- * http://github.com/mallowlabs/langscan
+  * http://github.com/mallowlabs/langscan
 
 == DESCRIPTION:
 
@@ -11,25 +11,25 @@ program analyzer for source code search engine
 == FEATURES/PROBLEMS:
 
 * Support Languages
- * C
- * C++
- * C#
- * Java
- * JavaScript
- * Ruby
- * Python
- * PHP
- * Perl
- * Objective Caml
- * Brainfuck
- * CSS
- * Shell Script
- * Emacs Lisp
- * Scheme
- * Plain Text
- * Io
- * Lua
- * Eiffel
+  * C
+  * C++
+  * C#
+  * Java
+  * JavaScript
+  * Ruby
+  * Python
+  * PHP
+  * Perl
+  * Objective Caml
+  * Brainfuck
+  * CSS
+  * Shell Script
+  * Emacs Lisp
+  * Scheme
+  * Plain Text
+  * Io
+  * Lua
+  * Eiffel
 
 == SYNOPSIS:
 === Example1
@@ -79,8 +79,8 @@ program analyzer for source code search engine
 
 == LICENSE:
 Copyright (C) 2004-2005 Satoru Takabayashi <satoru@namazu.org>
-    All rights reserved.
-    This is free software with ABSOLUTELY NO WARRANTY.
+All rights reserved.
+This is free software with ABSOLUTELY NO WARRANTY.
 
 You can redistribute it and/or modify it under the terms of
 the GNU General Public License version 2.
