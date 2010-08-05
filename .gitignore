@@ -3,6 +3,7 @@ Makefile
 *.bundle
 *.so
 *.dll
+*.gemspec
 pkg
 doc
 .DS_Store
