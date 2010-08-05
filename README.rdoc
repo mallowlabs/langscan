@@ -6,7 +6,7 @@
 
 == DESCRIPTION:
 
-program analyzer for source code search engine
+LangScan is a program analyzer for source code search engine.
 
 == FEATURES/PROBLEMS:
 
@@ -75,11 +75,13 @@ program analyzer for source code search engine
 
 == INSTALL:
 
-* sudo gem install langscan
+  $ sudo gem install langscan
 
 == LICENSE:
 Copyright (C) 2004-2005 Satoru Takabayashi <satoru@namazu.org>
+
 All rights reserved.
+
 This is free software with ABSOLUTELY NO WARRANTY.
 
 You can redistribute it and/or modify it under the terms of
