@@ -1,0 +1,5 @@
+This directory contains Ripper for Ruby-1.8.
+It is a backport of Ripper distributed as part of Ruby-1.9 (2005-08-29).
+
+Ripper is licensed under Ruby license which is a dual license of GPL and
+original one.

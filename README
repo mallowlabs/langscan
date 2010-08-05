@@ -1,0 +1,46 @@
+= LangScan - program analyzer for source code search engine
+
+== Requirement
+
+* Ruby 1.8
+* flex 2.5.31 (flex 2.5.4 doesn't work)
+
+== Examples
+
+=== Example1
+  % cat -n hello.c
+       1  #include <stdio.h>
+       2
+       3  int main(int argc, char **argv)
+       4  {
+       5    printf("Hello World.\n");
+       6    return 0;
+       7  }
+  % ruby -rlangscan/c -e 'LangScan::C.scan(ARGF.readlines.join) {|f| p f}' < hello.c
+  #<LangScan::Fragment space " " 1 (8)>
+  #<LangScan::Fragment ident "stdio" 1 (10)>
+  #<LangScan::Fragment punct "." 1 (15)>
+  #<LangScan::Fragment space "\n" 2 (19)>
+  #<LangScan::Fragment space " " 3 (23)>
+  #<LangScan::Fragment preproc_beg "#" 1 (0)>
+  #<LangScan::Fragment ident "include" 1 (1)>
+  ...
+
+=== Example2
+  % cat -n display_fundef.rb
+     1  require 'langscan'
+     2
+     3  # display all function definitions.
+     4  ARGV.each {|arg|
+     5    next unless scanner = LangScan.choose(arg)
+     6    scanner.scan(File.open(arg).readlines.join) {|f|
+     7      if f.type == :fundef
+     8        puts f.text
+     9      end
+    10    }
+    11  }
+  % ruby display_fundef.rb hello.c
+  main
+
+== Authors
+See `AUTHORS'

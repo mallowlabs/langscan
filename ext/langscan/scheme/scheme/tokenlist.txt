@@ -1,0 +1,7 @@
+string
+ident
+number
+punct
+comment
+space
+quote_chars

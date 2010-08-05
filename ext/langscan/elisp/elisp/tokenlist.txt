@@ -1,0 +1,9 @@
+space
+comment
+punct
+integer
+floating
+string
+ident
+character
+quote_chars
