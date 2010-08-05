@@ -1,4 +1,4 @@
 require 'mkmf'
 
 $CFLAGS += " -DRIPPER -Iinclude"
-create_makefile('ripper')
+create_makefile('langscan/ruby/compat/ripper')

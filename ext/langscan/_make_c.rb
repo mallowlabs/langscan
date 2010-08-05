@@ -13,8 +13,8 @@ template.gsub!(/LangName/, module_name)
 c_file_name = File.join( output_directory, lang_abbrev + ".c" )
 FileUtils.rm_f(c_file_name)
 File.open(c_file_name, "w") {|f|
-  f.printf("/* %s generated automatically from %s */\n",
-           c_file_name, template_file_name)
+#  f.printf("/* %s generated automatically from %s */\n",
+#           c_file_name, template_file_name)
   f.print template
 }
 #File.chmod(0444, c_file_name)

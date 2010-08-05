@@ -23,8 +23,8 @@ template.gsub!(/LangName/, module_name)
 h_file_name = File.join( output_directory, lang_abbrev + ".h" )
 FileUtils.rm_rf(h_file_name)
 File.open(h_file_name, "w") {|f|
-  f.printf("/* %s generated automatically from %s */\n",
-           h_file_name, template_file_name)
+#  f.printf("/* %s generated automatically from %s */\n",
+#           h_file_name, template_file_name)
   f.print template
 }
 #File.chmod(0444, h_file_name)

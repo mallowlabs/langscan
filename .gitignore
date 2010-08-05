@@ -6,4 +6,6 @@ Makefile
 pkg
 doc
 .DS_Store
+ext/langscan/*/*/*.c
+ext/langscan/*/*/*.h
 

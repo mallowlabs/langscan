@@ -23,7 +23,7 @@ srcdirectories.each do |sub_name|
 
 	module_name = File.read( File.join( path, "modulename.txt" ) )
 
-	r = system( %Q;#{flex_exe} #{nounistd} -d -o"#{flex_out}" "#{flex_file}"; )
+	r = system( %Q;#{flex_exe} #{nounistd} -L -t "#{flex_file}" > "#{flex_out}"; )
 	if ( r && File.exist?( dist ) )
 		FileUtils.copy( dist, flex_out )
 	end
@@ -51,7 +51,7 @@ srcdirectories.each do |sub_name|
 		h.write( <<-EOS )
 require "mkmf"
 dir_config( 'include' )
-create_makefile('#{sub_name}')
+create_makefile('langscan/#{sub_name}/#{sub_name}')
 		EOS
 	end
 end

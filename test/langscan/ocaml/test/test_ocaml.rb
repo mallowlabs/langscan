@@ -154,7 +154,7 @@ module LangScan::OCaml
                            "let (**) rec (**) foo (**) bar (**) = (**) bar")
     end
 
-  end
+  end if system("ocaml -version")
 
 end
 

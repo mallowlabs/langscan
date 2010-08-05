@@ -1,3 +1,3 @@
 require 'mkmf'
 
-create_makefile('pairmatcher')
+create_makefile('langscan/pairmatcher/pairmatcher')
