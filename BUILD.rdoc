@@ -1,0 +1,13 @@
+= how to build =
+== setting ==
+ $ sudo apt-get install ruby1.8-dev, rake
+ $ sudo apt-get install libopenssl-ruby
+ $ sudo apt-get install flex
+ $ sudo gem install hoe,newgem
+
+== generate ==
+ $ cd langscan
+ $ rake setup:config
+ $ rake compile
+ $ rake package
+
